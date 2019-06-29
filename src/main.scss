@@ -25,12 +25,15 @@ html * {
 .pos-relative {
   background-color: blue;
   margin-top: 50px;
+  position: relative;
   right: 20px;
   top: 20px;
 }
 .pos-absolute {
   background-color: orange;
   position: absolute;
+  top: 0;
+  left: 0;
 }
 .pos-static {
   background-color: purple;
