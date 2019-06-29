@@ -4,6 +4,38 @@
 }
 
 html * {
-  outline: 1px solid red;
-  font-family: New_font;
+   font-family: New_font;
+}
+
+.big-div {
+  //display: none; - запрещение отображения элемента html
+  height: 200hv;
+}
+.block {
+  height: 100px;
+}
+.pos-fixed {
+  background-color: red;
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.pos-relative {
+  background-color: blue;
+  margin-top: 50px;
+  right: 20px;
+  top: 20px;
+}
+.pos-absolute {
+  background-color: orange;
+  position: absolute;
+}
+.pos-static {
+  background-color: purple;
+}
+.big-div {
+  height: 1000px;
+  background-color: rgb(15, 201, 24);
 }
