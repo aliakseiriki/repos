@@ -4,10 +4,62 @@
 }
 
 html * {
-  // outline: 1px solid red;
+  margin: 0;
+  padding: 0;
   font-family: New_font;
+  font-size: 1em;
+  /*outline: 0.1px solid black;*/
 }
 
-.menu {
-  background: blue;
+.menu_button {
+  background: grey;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.menu_holder {
+  list-style-type: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding-left: 50%;
+  display: none;
+}
+
+.menu_button:hover .menu_holder {
+  display: block;
+}
+
+.menu_item {
+  background: yellow;
+  position: relative;
+  top: 0;
+  left: 0;
+  border: 0.1px solid black;
+}
+
+.menu_item:hover {
+  background: grey;
+}
+
+.submenu_holder {
+  list-style-type: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  display: none;
+}
+
+.menu_item:hover .submenu_holder {
+  display: block;
+}
+
+.submenu_item {
+  background: yellow;
+  border: 0.1px solid black;
+}
+
+.submenu_item:hover {
+  background: grey;
 }
