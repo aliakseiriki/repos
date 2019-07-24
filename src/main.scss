@@ -3,6 +3,8 @@
   font-family: New_font;
 }
 
+@import "./partial/card/card.scss"
+
 html * {
   margin: 0;
   padding: 0;
@@ -26,6 +28,7 @@ html * {
 
 .header {
   background: green;
+  cursor: url(1.gif);
 }
 
 .footer {
