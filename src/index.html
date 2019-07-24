@@ -6,7 +6,17 @@
     <title>Hello world</title>
   </head>
   <body>
-    <h1>Hello world</h1>
-    <img src="./img/car.png" alt="car">
-  </body>
+      <div class="header">bla bla</div>
+      <div class="clearfix">
+        <div class="child_1">bla bla</div>
+        <div class="child_2">bla bla</div>
+        <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, nulla doloremque quaerat
+          sequi magnam cumque pariatur velit necessitatibus ea, delectus soluta sapiente nobis et. Dolore, distinctio!
+          Doloremque nihil deleniti voluptates.
+        </div>
+      </div>
+      @@include('./partial/card/card.html', {"cardName": "first card"})
+      @@include('./partial/card/card.html', {"cardName": "second card"})
+      <div class="footer">bla bla</div>
+    </body>
 </html>
