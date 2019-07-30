@@ -6,4 +6,20 @@
 html * {
   outline: 1px solid red;
   font-family: New_font;
+  margin: 0;
+	padding: 0;
+}
+
+/*header styles*/
+.header {
+	display: flex;
+	width: 1200px;
+}
+
+.header_logo {
+	width: 30%;
+}
+
+.header_navigation {
+
 }
