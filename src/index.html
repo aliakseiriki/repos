@@ -2,21 +2,60 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./partial/css/main.scss">
     <title>Orange rabbit</title>
   </head>
   <body>
-      <div class="header">bla bla</div>
-      <div class="clearfix">
-        <div class="child_1">bla bla</div>
-        <div class="child_2">bla bla</div>
-        <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, nulla doloremque quaerat
-          sequi magnam cumque pariatur velit necessitatibus ea, delectus soluta sapiente nobis et. Dolore, distinctio!
-          Doloremque nihil deleniti voluptates.
+    <div class="header">
+      <div class="header_logo">
+      </div>
+      <div class="header_navigation">
+        @@include('./partial/html/nav.html', {
+          "linkname": "home"
+        })
+      </div>       
+    </div>
+    
+    <div class="slider">
+    </div>
+    
+    <div class="container">
+      <div class="content">
+        <p class="text">
+        </p>
+        <p class="">
+          <a href="#">
+            <em>
+              read more...
+            </em>
+          </a>
+        </p>
+      </div>
+    </div>
+    <div class="content">
+      @@include('./partial/headers/headers.html' {"header":"Meat the team"})
+    </div>
+    <div class="content">
+      <div class="user">
+        <div class="user_characteristics">
+          <span class="user_name">
+              Hoof
+          </span>
+          <span class="user_position">
+              - Lead Designer
+          </span>
+        </div>
+        <div class="user_portrait">
+        </div>
+        <div class="user_discription">
         </div>
       </div>
-      @@include('./partial/card/card.html', {"cardName": "first card"})
-      @@include('./partial/card/card.html', {"cardName": "second card"})
-      <div class="footer">bla bla</div>
-    </body>
+    </div>
+    @@include('./src/headers/headers.html' {"@@header":"Send us a message..."})
+    <div class="content">
+      <form class="input" type="input">
+    </div>
+    <div class="footer">			
+    </div>
+  </body>
 </html>
