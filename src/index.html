@@ -2,60 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./partial/css/main.scss">
     <title>Orange rabbit</title>
   </head>
   <body>
     <div class="header">
       <div class="header_logo">
       </div>
-      <div class="navigation">
-        <div class="navigation_link">
-          <a href="#">
-            <div class="home_link_icon">
-            </div>
-            <div class="home_link_text">
-              home
-            </div>
-          </a>
-        </div>
-        <div class="navigation_link">
-          <a href="#">
-            <div class="about_link_icon">
-            </div>
-            <div class="about_link_text">
-              about
-            </div>
-          </a>
-        </div>
-        <div class="navigation_link">
-          <a href="#">
-            <div class="work_link_icon">
-            </div>
-            <div class="work_link_text">
-              work
-            </div>
-          </a>
-        </div>
-        <div class="navigation_link">
-          <a href="#">
-            <div class="blog_link_icon">
-            </div>
-            <div class="blog_link_text">
-              blog
-            </div>
-          </a>
-        </div>
-        <div class="navigation_link">
-          <a href="#">
-            <div class="contact_link_icon">
-            </div>
-            <div class="contact_link_text">
-              contact
-            </div>
-          </a>
-        </div>
-      </div>
+      <div class="header_navigation">
+        @@include('./partial/html/nav.html', {
+          "linkname": "home"
+        })
+      </div>       
     </div>
     
     <div class="slider">
@@ -75,7 +33,7 @@
       </div>
     </div>
     <div class="content">
-      @@include ('./src/headers/headers.html' {"@@header":"Meat the team"};
+      @@include('./partial/headers/headers.html' {"header":"Meat the team"})
     </div>
     <div class="content">
       <div class="user">
@@ -93,7 +51,7 @@
         </div>
       </div>
     </div>
-    @@include ('./src/headers/headers.html' {"@@header":"Send us a message..."};
+    @@include('./src/headers/headers.html' {"@@header":"Send us a message..."})
     <div class="content">
       <form class="input" type="input">
     </div>
