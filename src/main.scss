@@ -1,29 +1,7 @@
-@import './partial/sprites/sprites.scss';
-
-/*@font-face {
-  src: url("./fonts/16758.otf");
-  font-family: New_font;
-}*/
-
-html * {
-  outline: 1px solid red;
-  font-family: New_font;
-  margin: 0;
-	padding: 0;
-}
-
-/*header styles*/
-.header {
-	display: flex;
-	width: 1200px;
-}
-
-.header_logo {
-  flex-grow: 1;
-}
-
-.header_navigation {
-  flex-grow: 3;
-  display: flex;
-  flex-direction: row-reverse;
-}
+@import './css/common.scss';
+@import './css/container.scss';
+@import './css/sprites.scss';
+@import './css/slider.scss';
+@import './css/header.scss';
+@import './css/article.scss';
+@import './css/team_member_card.scss'
