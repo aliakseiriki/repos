@@ -1,9 +1,25 @@
-@font-face {
+/*@font-face {
   src: url("./fonts/16758.otf");
   font-family: New_font;
-}
+}*/
 
 html * {
   outline: 1px solid red;
   font-family: New_font;
+}
+
+.class1 {
+  display: none;
+}
+
+.class2 {
+  border-radius: 50%;
+}
+
+.class1:checked ~ .class2 {
+  border: 2px solid blue;
+}
+
+#1 {
+  position: relative;
 }
