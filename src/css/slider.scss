@@ -1,0 +1,33 @@
+
+.slider {
+    background: url(/img/orange.png);
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    justify-content: flex-start;
+    border-top: 2px solid rgb(251, 156, 6);
+    border-bottom: 2px solid rgb(251, 156, 6);
+}
+
+.slider_text {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   font-size: 4em;
+}
+
+.slider_text_first_row {
+    background: rgba(77, 79, 79, 0.7);
+    color: rgb(251, 156, 6);
+    text-align: center;
+    margin-bottom: 5%;
+    padding: 2%;
+}
+
+.slider_text_second_row {
+    background: rgba(255, 199, 89, 0.7);
+    color: rgb(110, 109, 109);
+    text-align: center;
+    padding: 2%;
+}
