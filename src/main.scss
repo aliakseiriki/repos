@@ -1,9 +1,7 @@
-@font-face {
-  src: url("./fonts/16758.otf");
-  font-family: New_font;
-}
+@import "./partials/star-item/star-item.scss";
 
-html * {
-  outline: 1px solid red;
-  font-family: New_font;
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
 }
