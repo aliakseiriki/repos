@@ -2,9 +2,25 @@
     color: rgb(254,156,6);
     width: 100%;
     display: inline-block;
+    font-size: 2em;
+    padding: 50px 0;
 }
 
 .input {
-    width: 100%;
+    width: 85%;
+    padding: 20px;
+}
+
+.for_form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_name {
     display: inline-block;
+    width: 10%;
+}
+
+.form:last-child input {
+    padding-bottom: 80px;
 }

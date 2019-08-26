@@ -87,19 +87,19 @@
         @@include('./html/team_member_card.html', {
           "team_member_name": "Hoof",
           "team_member_position": "Lead Designer",
-          "team_memder_portrait_path": "./img/hoof.png",
+          "team_memder_portrait_path": "./img/hoof.jpg",
           "team_member_description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi asperiores minima illo amet veniam perferendis"
         })
         @@include('./html/team_member_card.html', {
           "team_member_name": "Nibs",
           "team_member_position": "CEO/Director",
-          "team_memder_portrait_path": "./img/nibs.png",
+          "team_memder_portrait_path": "./img/nibs.jpg",
           "team_member_description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi asperiores minima illo amet veniam perferendis"
         })
         @@include('./html/team_member_card.html', {
           "team_member_name": "Squawk",
           "team_member_position": "Developer",
-          "team_memder_portrait_path": "./img/squawk.png",
+          "team_memder_portrait_path": "./img/squawk.jpg",
           "team_member_description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi asperiores minima illo amet veniam perferendis"
         })
     </div>
@@ -110,13 +110,20 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="container for_form">
         @@include('./html/form.html', {
           "name": "Name"
         })
+        @@include('./html/form.html', {
+          "name": "Email"
+        })
+        @@include('./html/form.html', {
+          "name": "Message"
+        })
     </div>
 
-    <div class="footer">			
+    <div class="footer">
+      COPYRIGHT ORANGE RABBIT - DESIGNED BY JAKE BHATT.			
     </div>
   </body>
 </html>

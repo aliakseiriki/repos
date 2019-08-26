@@ -6,7 +6,7 @@
 }
 
 .header_logo {
-  flex-grow: 2;
+  width: 50%;
   display: flex;
   align-items: center;
 }
@@ -16,12 +16,24 @@
 }
 
 .header_navigation {
-  flex-grow: 1;
+  width: 50%;
   display: flex;
+  flex-wrap: wrap;
   text-align: center;
-  justify-content: space-between;
   align-items: center;
   font-family: 'Open Sans', sans-serif;
+}
+
+.header_navigation_item {
+  margin: 0 40px;
+}
+
+.header_navigation_item:first-child {
+  margin-left: 0;
+}
+
+.header_navigation_item:last-child {
+  margin-right: 0;
 }
 
 .header_logo_text_first_row {
