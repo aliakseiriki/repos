@@ -20,8 +20,6 @@
 }
 
 [id^="star"]:checked ~ .star__label,
-[id^="star"]:hover ~ .star__label,
-[id^="star"]:checked + .star__label,
-[id^="star"]:hover + .star__label  {
+[id^="star"]:hover ~ .star__label {
     background-image: url("/img/star-gold.png");
 }
