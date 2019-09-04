@@ -3,10 +3,132 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./css/main.css">
-    <title>Hello world</title>
+    <title>Orange rabbit</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Rokkitt|Yanone+Kaffeesatz:700&display=swap" rel="stylesheet">
+    
   </head>
   <body>
+<<<<<<< HEAD
     <h1>Hello world</h1>
     <script src="./js/main.js" defer></script>
+=======
+    <div class="header">
+      <div class="header_logo">
+        <img src="/img/rabbit.png" alt="logo">
+        <div class="header_logo_text">
+          <p class="header_logo_text_first_row">
+            orange
+          </p>
+          <p class="header_logo_text_second_row">
+            <strong>RABBIT</strong>
+          </p>
+        </div>
+      </div>
+      
+      <div class="header_navigation">
+        @@include('./html/navigation.html', {
+          "link_name": "home",
+          "class_name": "home_icon"
+        })
+        @@include('./html/navigation.html', {
+          "link_name": "about",
+          "class_name": "about_icon"
+        })
+        @@include('./html/navigation.html', {
+          "link_name": "work",
+          "class_name": "work_icon"
+        })
+        @@include('./html/navigation.html', {
+          "link_name": "blog",
+          "class_name": "blog_icon"
+        })
+        @@include('./html/navigation.html', {
+          "link_name": "contact",
+          "class_name": "contact_icon"
+        })
+      </div>       
+    </div>
+    
+    <div class="slider">
+      <div class="container">
+        <div class="slider_text">
+          <div class="slider_text_first_row">
+            DO YOU LIKE RABBITS?
+          </div>
+          <div class="slider_text_second_row">
+            DO YOU LIKE ORANGES?
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+        @@include('./html/article.html', {
+          "article_content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati corporis sit laudantium fuga doloribus? Est odio laboriosam fuga nesciunt soluta atque vel, deserunt vero? Itaque molestiae voluptatem non praesentium dolore!Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati corporis sit laudantium fuga doloribus? Est odio laboriosam fuga nesciunt soluta atque vel, deserunt vero? Itaque molestiae voluptatem non praesentium dolore!",
+          "article_link_name": "read more..."
+        })
+        @@include('./html/article.html', {
+          "article_content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati corporis sit laudantium fuga doloribus? Est odio laboriosam fuga nesciunt soluta atque vel, deserunt vero? Itaque molestiae voluptatem non praesentium dolore!Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati corporis sit laudantium fuga doloribus? Est odio laboriosam fuga nesciunt soluta atque vel, deserunt vero? Itaque molestiae voluptatem non praesentium dolore!",
+          "article_link_name": "read more..."
+        })
+        @@include('./html/article.html', {
+          "article_content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati corporis sit laudantium fuga doloribus? Est odio laboriosam fuga nesciunt soluta atque vel, deserunt vero? Itaque molestiae voluptatem non praesentium dolore!Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati corporis sit laudantium fuga doloribus? Est odio laboriosam fuga nesciunt soluta atque vel, deserunt vero? Itaque molestiae voluptatem non praesentium dolore!",
+          "article_link_name": "read more..."
+        })
+        @@include('./html/article.html', {
+          "article_content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati corporis sit laudantium fuga doloribus? Est odio laboriosam fuga nesciunt soluta atque vel, deserunt vero? Itaque molestiae voluptatem non praesentium dolore!Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati corporis sit laudantium fuga doloribus? Est odio laboriosam fuga nesciunt soluta atque vel, deserunt vero? Itaque molestiae voluptatem non praesentium dolore!",
+          "article_link_name": "read more..."
+        })
+    </div>
+
+    <div class="container">
+      <div class="text_header">
+        Meet the team
+      </div>
+    </div>
+
+    <div class="container">
+        @@include('./html/team_member_card.html', {
+          "team_member_name": "Hoof",
+          "team_member_position": "Lead Designer",
+          "team_memder_portrait_path": "./img/hoof.jpg",
+          "team_member_description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi asperiores minima illo amet veniam perferendis"
+        })
+        @@include('./html/team_member_card.html', {
+          "team_member_name": "Nibs",
+          "team_member_position": "CEO/Director",
+          "team_memder_portrait_path": "./img/nibs.jpg",
+          "team_member_description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi asperiores minima illo amet veniam perferendis"
+        })
+        @@include('./html/team_member_card.html', {
+          "team_member_name": "Squawk",
+          "team_member_position": "Developer",
+          "team_memder_portrait_path": "./img/squawk.jpg",
+          "team_member_description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi asperiores minima illo amet veniam perferendis"
+        })
+    </div>
+    
+    <div class="container">
+      <div class="text_header">
+        Send us a message...
+      </div>
+    </div>
+
+    <div class="container for_form">
+        @@include('./html/form.html', {
+          "name": "Name"
+        })
+        @@include('./html/form.html', {
+          "name": "Email"
+        })
+        @@include('./html/form.html', {
+          "name": "Message"
+        })
+    </div>
+
+    <div class="footer">
+      COPYRIGHT ORANGE RABBIT - DESIGNED BY JAKE BHATT.			
+    </div>
+>>>>>>> 419632b6c0df0c24be312b6dafe63f0be19efe96
   </body>
 </html>

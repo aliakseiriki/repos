@@ -1,0 +1,38 @@
+.about_icon {
+    width: 54px; height: 46px;
+    background: url('/img/navigation_sprite.png') 8px -129px;
+    margin: 0 auto;
+}
+
+.blog_icon {
+    width: 54px; height: 46px;
+    background: url('/img/navigation_sprite.png') -139px -10px;
+    margin: 0 auto;
+}
+
+.contact_icon {
+    width: 54px; height: 46px;
+    background: url('/img/navigation_sprite.png') -7px -76px;
+    margin: 0 auto;
+}
+
+.home_icon {
+    width: 54px; height: 46px;
+    background: url('/img/navigation_sprite.png') -10px -10px;
+    margin: 0 auto;
+}
+
+.work_icon {
+    width: 54px; height: 46px;
+    background: url('/img/navigation_sprite.png') -75px -10px;
+    margin: 0 auto;
+}
+
+.header_navigation_item {
+    display: flex;
+}
+
+.link_name {
+    text-decoration: none;
+    color: rgb(158, 155, 155);
+}
