@@ -3,11 +3,11 @@
 }
 
 .star__label {
+    display: block;
     width: 14px;
     height: 14px;
     margin: 0 3px;
-    background-image: url("/img/star-empty.png");
-    display: block;
+    background-image: url("/src/img/star-empty.png");
     cursor: pointer;
 
     &:last-of-type {
@@ -21,5 +21,5 @@
 
 [id^="star"]:checked ~ .star__label,
 [id^="star"]:hover ~ .star__label {
-    background-image: url("/img/star-gold.png");
+    background-image: url("/src/img/star-gold.png");
 }
