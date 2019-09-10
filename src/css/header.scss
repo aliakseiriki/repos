@@ -1,0 +1,145 @@
+$z-index_for_header: 100;
+
+.header {
+    position: relative;
+
+    z-index: 0;
+
+    display: flex;
+    justify-content: center;
+
+    height: 496px;
+
+    overflow: hidden;
+
+    color: white;
+    background: #f74c55;
+}
+
+.header_left {
+    position: relative;
+
+    z-index: 0;
+
+    min-width: $mainwidth/2;/*$mainwidth defined in common.scss*/
+
+    // overflow: hidden;
+}
+
+.background_circle_left_1 {
+    background-color: #ee732f;
+}
+
+.background_circle_left_2 {
+    background-color: #f74c55;
+}
+
+.background_circle_left_3 {
+    background-color: #2d5f3b;
+}
+
+.background_circle_left_4 {
+    background-color: #82a3ad;
+}
+
+.background_circle_left_5 {
+    background-color: #f74c55;
+}
+
+.background_circle_left_6 {
+    background-color: #404040;
+}
+
+.background_circle_left_7 {
+    background-color: #fb636b;
+}
+
+@for $counter from 1 to 7 {
+    .circle#{$counter} {
+        position: absolute;
+        top: -120px;
+        left: -100px - 40*$counter;
+
+        z-index: $z-index_for_header - $counter;
+
+        width: min-content;
+        width: 288px + 80*$counter;
+        height: 207px + 80*$counter;
+
+        text-align: center;
+        overflow: auto;
+        text-overflow: ellipsis;
+        word-break: break-all;
+        word-wrap: break-word;
+        white-space: wrap;
+
+        border-radius: 50%;
+    }
+}
+
+.header_right {
+    position: relative;
+
+    z-index: 0;
+
+    min-width: $mainwidth/2;/*$mainwidth defined in common.scss*/
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    // overflow: hidden;
+}
+
+.background_circle_right_1 {
+    background-color: #ed732f;
+}
+
+.background_circle_right_2 {
+    background-color: #f74c55;
+}
+
+.background_circle_right_3 {
+    background-color: #2d5f3b;
+}
+
+.background_circle_right_4 {
+    background-color: #404040;
+}
+
+.background_circle_right_5 {
+    background-color: #fb636b;
+}
+
+@for $counter from 1 to 5 {
+    .circle_right#{$counter} {
+        position: absolute;
+        bottom: -65px - 40*$counter;
+        right: -140px - 20*$counter;
+
+        z-index: $z-index_for_header - $counter;
+
+        width: min-content;
+        width: 200px + 70*$counter;
+        height: 200px + 70*$counter;
+
+        text-align: center;
+        overflow: auto;
+        text-overflow: ellipsis;
+        word-break: break-all;
+        word-wrap: break-word;
+        white-space: wrap;
+
+        border-radius: 50%;
+    }
+}
+
+.button {
+    display: inline-block;
+
+    padding: 5px 15px;
+
+    border: 1px solid white;
+    border-radius: 5px;
+}

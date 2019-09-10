@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <title>Red Flat</title>
   </head>
   <body>
@@ -10,24 +11,129 @@
       <div class="header_left">
           @@include('./html/leftcircle.html', {
             "number_of_circle": "1",
-            "content": "mu"
+            "content_block": "scccccccccc cfbgggfgggggggg<br> gggggggggg gggggggg <br>gggggggggg ggggggggggggg<br>ggggggggg ggggggg ggggggggcccc ccccccc cccccccc cccccccccc cccccc ccd"
           })
-          @@include('./html/leftcircle.html', {
+          @@include('./html/leftcircle.html', { 
             "number_of_circle": "2",
-            "content": ""
+            "content_block": ""
           })
           @@include('./html/leftcircle.html', {
             "number_of_circle": "3",
-            "content": ""
+            "content_block": ""
           })
           @@include('./html/leftcircle.html', {
             "number_of_circle": "4",
-            "content": ""
+            "content_block": ""
+          })
+          @@include('./html/leftcircle.html', {
+            "number_of_circle": "5",
+            "content_block": ""
+          })
+          @@include('./html/leftcircle.html', {
+            "number_of_circle": "6",
+            "content_block": ""
+          })
+          @@include('./html/leftcircle.html', {
+            "number_of_circle": "7",
+            "content_block": ""
           })
       </div>
       <div  class="header_right">
-
+        <div class="menu_container">
+          @@include('./html/menu_item.html', {
+            "content_block": "THE PRODUCTS"
+          })
+          @@include('./html/menu_item.html', {
+            "content_block": "SERVICES"
+          })
+          @@include('./html/menu_item.html', {
+            "content_block": "CONTACT ME"
+          })
+        </div>
+        <div>
+            <h1>
+              Join the colors.
+            </h1>
+            <p>
+              There are only 3 colors, 10 digits
+            </p>
+            <p class="button">
+              Join now
+            </p>
+        </div>
+        @@include('./html/rightcircle.html', {
+          "number_of_circle": "1",
+          "content_block": ""
+        })
+        @@include('./html/rightcircle.html', {
+          "number_of_circle": "2",
+          "content_block": ""
+        })
+        @@include('./html/rightcircle.html', {
+          "number_of_circle": "3",
+          "content_block": ""
+        })
+        @@include('./html/rightcircle.html', {
+          "number_of_circle": "4",
+          "content_block": ""
+        })
+        @@include('./html/rightcircle.html', {
+          "number_of_circle": "5",
+          "content_block": ""
+        })
       </div>
+    </div>
+    <div class="main_content">
+      <h2 class="content_block">
+        There are only 3 colors, 10 digits
+      </h2>
+      <p class="content_block">
+        Lorem ipsum dolor sit amet1 consectetur adipisicing elit. Voluptatum veniam minus fuga aliquam velit sequi in nobis eaque est ea exercitationem necessitatibus voluptatibus, iure delectus doloribus sunt temporibus eius magni!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum veniam minus fuga aliquam velit sequi in nobis eaque est ea exercitationem necessitatibus voluptatibus, iure delectus doloribus sunt temporibus eius magni!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum veniam minus fuga aliquam velit sequi in nobis eaque est ea exercitationem necessitatibus voluptatibus, iure delectus doloribus sunt temporibus eius magni!
+      </p>
+      <div class="content_block for_colors">
+          @@include('./html/colors.html', {
+            "number_of_circle": "1",
+            "content_block": ""
+          })
+          @@include('./html/colors.html', {
+            "number_of_circle": "2",
+            "content_block": ""
+          })
+          @@include('./html/colors.html', {
+            "number_of_circle": "3",
+            "content_block": ""
+          })
+          @@include('./html/colors.html', {
+            "number_of_circle": "4",
+            "content_block": ""
+          })
+          @@include('./html/colors.html', {
+            "number_of_circle": "5",
+            "content_block": ""
+          })
+      </div>
+    </div>
+    <div class="main_content flex">
+        @@include('./html/text_blocks.html', {
+        "text_header": "CEO Optimazes",
+        "number_of_block": "1",
+        "content_block": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum veniam minus fuga aliquam velit sequi in nobis eaque est ea exercitationem necessitatibus voluptatibus, iure delectus doloribus sunt temporibus eius magni!"
+        })
+        @@include('./html/text_blocks.html', {
+        "text_header": "Responsive",
+        "number_of_block": "2",
+        "content_block": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum veniam minus fuga aliquam velit sequi in nobis eaque est ea exercitationem necessitatibus voluptatibus, iure delectus doloribus sunt temporibus eius magni!"
+        })
+        @@include('./html/text_blocks.html', {
+        "number_of_block": "3",
+        "text_header": "Cloud Services",
+        "content_block": "Lorem ipsum dolor sit amedf dfghhhhhhh ghggggggggggggg ffffffffff  hhhhhhhhhh d df dfdsa fdsasdf asdffd dsd t consectetur adipisicing elit. Voluptatum veniam minus fuga aliquam velit sequi in nobis eaque est ea exercitationem necessitatibus voluptatibus, iure delectus doloribus sunt temporibus eius magni!"
+        })
+    </div>
+    <div class="backgroung_landscape">
+
     </div>
   </body>
 </html>
