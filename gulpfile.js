@@ -25,15 +25,13 @@ const path = {
     html: 'src/**/[^_]*.html',
     style: 'src/main.scss',
     img: 'src/img/**/*.*',
-    fonts: 'src/fonts/**/*.*',
-    js: 'src/js/**/*.js'
+    fonts: 'src/fonts/**/*.*'
   },
   watch: {
     html: 'src/**/*.html',
     style: 'src/**/*.scss',
     img: 'src/img/**/*.*',
-    fonts: 'src/fonts/**/*.*',
-    js: 'src/js/**/*.js'
+    fonts: 'src/fonts/**/*.*'
   },
   clean: './distr'
 };
@@ -48,6 +46,7 @@ const serverConfig = {
   logPrefix: "IT-academy",
   notify: false
 };
+
 
 const cleanDist = (cb) => {
   if(fs.existsSync('./distr')) {
@@ -73,11 +72,11 @@ const stylesBuild = () => src(path.src.style)
   .pipe(sourcemaps.write('./maps/'))
   .pipe(dest(path.distr.css))
   .pipe(browsersync.stream());
-​
+
 const fontsBuild = () => src(path.src.fonts).pipe(dest(path.distr.fonts)).pipe(browsersync.stream());
-​
+
 const imgsBuild = () => src(path.src.img).pipe(dest(path.distr.img)).pipe(browsersync.stream());
-​
+
 const server = () => {
   browsersync.init(serverConfig);
   
@@ -85,10 +84,9 @@ const server = () => {
   watch(path.watch.style, stylesBuild);
   watch(path.src.img, imgsBuild);
   watch(path.src.fonts, fontsBuild);
-  watch(path.src.js, jsBuild);
   
 };
-​
+
 const build = series(cleanDist, parallel(httpBuild, stylesBuild, fontsBuild, imgsBuild));
 exports.start = series(build, server);
 exports.clean = series(cleanDist);
