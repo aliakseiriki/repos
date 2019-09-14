@@ -4,15 +4,17 @@
     align-items: center;
 
     height: 496px;
-    // width: $mainwidth;
+    width: $mainwidth;
     box-sizing: border-box;
+
+    margin: 0 auto;
 
     text-align: center;
     font-size: 50px;
     font-weight: 900;
 
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     background-position: center center;
     background-image: url(/img/pic.jpg);
     background-color: rgba(0, 0, 0, 0.5);   
