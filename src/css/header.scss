@@ -21,7 +21,7 @@ $z-index_for_header: 100;
 
     z-index: 0;
 
-    min-width: $mainwidth/2;/*$mainwidth defined in common.scss*/
+    width: $mainwidth/2;/*$mainwidth defined in common.scss*/
 
     // overflow: hidden;
 }
@@ -82,7 +82,7 @@ $z-index_for_header: 100;
 
     z-index: 0;
 
-    min-width: $mainwidth/2;/*$mainwidth defined in common.scss*/
+    width: $mainwidth/2;/*$mainwidth defined in common.scss*/
 
     display: flex;
     flex-direction: column;
