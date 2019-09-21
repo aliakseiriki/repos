@@ -1,3 +1,18 @@
 html * {
   outline: 1px solid red;
 }
+
+.card {
+  width: 200px;
+  height: 400px;
+  position: relative;
+  border: 1px solid grey;
+
+  &_description {
+    height: 70;
+    width: 57%;
+    background-color: green;
+    transform: rotate(-45deg);
+    position: absolute;
+  }
+}
