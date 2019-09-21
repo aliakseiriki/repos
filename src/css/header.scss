@@ -54,6 +54,12 @@ $z-index_for_header: 100;
     background-color: #fb636b;
 }
 
+.circle_inside {
+    line-height: 100%;
+    vertical-align: bottom;
+    width: 100%;
+}
+
 @for $counter from 1 to 7 {
     .circle#{$counter} {
         position: absolute;
