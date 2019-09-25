@@ -1,10 +1,20 @@
 .backgroung_landscape {
+    box-sizing: border-box;
+
+    margin: 0 auto;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(/img/pic.jpg); 
+}
+
+.text_above_backgroung_landscape {
     display: flex;
     flex-direction: column;
     align-items: center;
 
     height: 496px;
-    max-width: $mainwidth;
     box-sizing: border-box;
 
     margin: 0 auto;
@@ -13,9 +23,5 @@
     font-size: 50px;
     font-weight: 900;
 
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-image: url(/img/pic.jpg);
-    background-color: rgba(0, 0, 0, 0.5);   
+    background-color: rgba(0, 0, 0, 0.8);
 }

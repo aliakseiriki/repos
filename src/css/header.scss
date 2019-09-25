@@ -141,6 +141,11 @@ $z-index_for_header: 100;
     }
 }
 
+.text_in_header {
+    position: relative;
+    z-index: 200;
+}
+
 .button {
     display: inline-block;
 
@@ -148,4 +153,9 @@ $z-index_for_header: 100;
 
     border: 1px solid white;
     border-radius: 5px;
+    cursor: pointer;
+}
+
+.join_now {
+    font-size: 40px;
 }
