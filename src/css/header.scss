@@ -55,9 +55,10 @@ $z-index_for_header: 100;
 }
 
 .circle_inside {
-    line-height: 100%;
+    line-height: 360px;
     vertical-align: bottom;
-    width: 100%;
+    font-size: 70px;
+    font-family: 'Satisfy', cursive;
 }
 
 @for $counter from 1 to 7 {
@@ -73,12 +74,7 @@ $z-index_for_header: 100;
         height: 207px + 80*$counter;
 
         text-align: center;
-        overflow: auto;
-        text-overflow: ellipsis;
-        word-break: break-all;
-        word-wrap: break-word;
-        white-space: wrap;
-
+        
         border-radius: 50%;
     }
 }

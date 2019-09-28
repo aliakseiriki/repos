@@ -60,15 +60,26 @@
 
 .flex {
     display: flex;
-    align-items: stretch;
     justify-content: center;
-}
-
-.flex:first-child:last-child {
-    width: 500px;
 }
 
 .responsive {
     width: 30px;
     vertical-align: middle;
+}
+
+@media (max-width: 600px){
+    .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    .gradient {
+        background: white;
+    }
+    .text_block_1 {
+        background: #404040;
+    }
+    .text_block_3 {
+        background: #2d5f3b;
+    }
 }
